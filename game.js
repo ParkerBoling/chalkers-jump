@@ -1,4 +1,4 @@
-alert('Hello friends!');
+alert('Hi friends!');
 alert(prompt('Do you want to play my game?'));
 var game;
 var player;
@@ -39,12 +39,12 @@ function createPoisons() {
 function createPlatforms() {
     platforms = game.add.physicsGroup();
 
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
+    platforms.create(300, 150, 'platform');
+    platforms.create(400, 250, 'platform');
+    platforms.create(100, 250, 'platform');
+    platforms.create(500, 350, 'platform');
+    platforms.create(400, 450, 'platform');
+    platforms.create(300, 550, 'platform');
 
     platforms.setAll('body.immovable', true);
 }
