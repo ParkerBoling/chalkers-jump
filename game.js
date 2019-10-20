@@ -1,4 +1,4 @@
-alert('Hello There!');
+alert('Hello friends!');
 alert(prompt('Do you want to play my game?'));
 var game;
 var player;
