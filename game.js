@@ -21,26 +21,26 @@ var winningScore = 100;
 function createStars() {
     stars = game.add.physicsGroup();
 
-    starCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'star');
-    starCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'star');
-    starCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'star');
+    starCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'star');
+    starCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'star');
+    starCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'star');
 
 }
 function createCoins() {
     coins = game.add.physicsGroup();
 
-    coinCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'coin');
-    coinCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'coin');
-    coinCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'coin');
-    coinCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'coin');
+    coinCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'coin');
+    coinCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'coin');
+    coinCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'coin');
+    coinCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'coin');
 }
 
 function createPoisons() {
     poisons = game.add.physicsGroup();
 
-    poisonCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'poison');
-    poisonCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'poison');
-    poisonCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'poison');
+    poisonCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'poison');
+    poisonCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'poison');
+    poisonCreate(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'poison');
 
 }
 
@@ -48,12 +48,12 @@ function createPoisons() {
 function createPlatforms() {
     platforms = game.add.physicsGroup();
 
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
-    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
+    platforms.create(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'platform');
+    platforms.create(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'platform');
+    platforms.create(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'platform');
+    platforms.create(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'platform');
+    platforms.create(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'platform');
+    platforms.create(Math.floor(Math.random()*500+1), Math.floor(Math.random()*500+1), 'platform');
 
     platforms.setAll('body.immovable', true);
 }
