@@ -14,24 +14,24 @@ var finalMessage;
 var won = false;
 var gameOver = false;
 var currentScore = 0;
-var lives = 3;
+var lives = 5;
 var winningScore = 100;
 
 function createStars() {
     stars = game.add.physicsGroup();
 
-    starCreate(425, 100, 'star');
-    starCreate(315, 100, 'star');
-    starCreate(175, 200, 'star');
+    starCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'star');
+    starCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'star');
+    starCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'star');
 
 }
 
 function createPoisons() {
     poisons = game.add.physicsGroup();
 
-    poisonCreate(675, 275, 'poison');
-    poisonCreate(450, 375, 'poison');
-    poisonCreate(375, 475, 'poison');
+    poisonCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'poison');
+    poisonCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'poison');
+    poisonCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'poison');
 
 }
 
@@ -39,12 +39,12 @@ function createPoisons() {
 function createPlatforms() {
     platforms = game.add.physicsGroup();
 
-    platforms.create(300, 150, 'platform');
-    platforms.create(400, 250, 'platform');
-    platforms.create(100, 250, 'platform');
-    platforms.create(500, 350, 'platform');
-    platforms.create(400, 450, 'platform');
-    platforms.create(300, 550, 'platform');
+    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
+    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
+    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
+    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
+    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
+    platforms.create(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'platform');
 
     platforms.setAll('body.immovable', true);
 }
