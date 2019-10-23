@@ -25,16 +25,10 @@ function createStars() {
     starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
     starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
     starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
-
+    starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
+    starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
 }
-function createCoins() {
-    coins = game.add.physicsGroup();
 
-    coinCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'coin');
-    coinCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'coin');
-    coinCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'coin');
-    coinCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'coin');
-}
 
 function createPoisons() {
     poisons = game.add.physicsGroup();
