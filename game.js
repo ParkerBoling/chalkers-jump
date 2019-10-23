@@ -1,4 +1,3 @@
-DrawBox(Red);
 alert('Hi friends!');
 alert(prompt('Do you want to play my game?'));
 var game;
