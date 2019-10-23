@@ -5,6 +5,7 @@ var player;
 var platforms;
 var badges;
 var stars;
+var coins;
 var poisons;
 var cursors;
 var jumpButton;
@@ -24,6 +25,14 @@ function createStars() {
     starCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'star');
     starCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'star');
 
+}
+function createCoins() {
+    coins = game.add.physicsGroup();
+
+    coinCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'coin');
+    coinCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'coin');
+    coinCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'coin');
+    coinCreate(Math.floor(Math.random()*800+1), Math.floor(Math.random()*800+1), 'coin');
 }
 
 function createPoisons() {
@@ -64,6 +73,14 @@ function poisonCreate(left, top, poisonImage) {
 function starCollect(player, star) {
     star.kill();
     currentScore = currentScore + 20;
+    if (currentScore === winningScore) {
+        won = true;
+    }
+}
+
+function coinCollect(player, star) {
+    coin.kill();
+    currentScore = currentScore + 10;
     if (currentScore === winningScore) {
         won = true;
     }
