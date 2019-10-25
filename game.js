@@ -1,5 +1,4 @@
-alert('Hi friends!');
-alert(prompt('Do you want to play my game?'));
+// Just A Buncha variables.
 var game;
 var player;
 var platforms;
@@ -18,6 +17,11 @@ var currentScore = 0;
 var lives = 5;
 var winningScore = 100;
 
+// Me asking my fellow peers if they want to play my game
+alert('Hi friends!');
+alert(prompt('Do you want to play my game?'));
+
+// 1. Create Stars
 function createStars() {
     stars = game.add.physicsGroup();
 
@@ -28,7 +32,7 @@ function createStars() {
     starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
 }
 
-
+// 2. Create Poison
 function createPoisons() {
     poisons = game.add.physicsGroup();
 
@@ -38,7 +42,7 @@ function createPoisons() {
 
 }
 
-
+// 3. Create Platforms
 function createPlatforms() {
     platforms = game.add.physicsGroup();
 
