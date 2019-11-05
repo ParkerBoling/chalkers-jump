@@ -14,45 +14,40 @@ var finalMessage;
 var won = false;
 var gameOver = false;
 var currentScore = 0;
+var lives = 3;
 var lives = 5;
 var winningScore = 100;
 
-// Me asking my fellow peers if they want to play my game
-alert('Hi friends!');
-alert(prompt('Do you want to play my game?'));
-
-// 1. Create Stars
 function createStars() {
     stars = game.add.physicsGroup();
 
-    starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
-    starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
-    starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
-    starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
-    starCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'star');
+    starCreate(425, 100, 'star');
+    starCreate(315, 100, 'star');
+    starCreate(175, 200, 'star');
+    starCreate(320, 85, 'star');
+    starCreate(200, 27, 'star');
 }
 
-// 2. Create Poison
 function createPoisons() {
     poisons = game.add.physicsGroup();
 
-    poisonCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'poison');
-    poisonCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'poison');
-    poisonCreate(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'poison');
-
+    poisonCreate(675, 275, 'poison');
+    poisonCreate(450, 375, 'poison');
+    poisonCreate(375, 475, 'poison');
+    
 }
 
-// 3. Create Platforms
+
 function createPlatforms() {
     platforms = game.add.physicsGroup();
 
-    platforms.create(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'platform');
-    platforms.create(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'platform');
-    platforms.create(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'platform');
-    platforms.create(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'platform');
-    platforms.create(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'platform');
-    platforms.create(Math.floor(Math.random()*100+1), Math.floor(Math.random()*100+1), 'platform');
-
+    platforms.create(300, 150, 'platform');
+    platforms.create(400, 250, 'platform');
+    platforms.create(100, 250, 'platform');
+    platforms.create(500, 350, 'platform');
+    platforms.create(400, 450, 'platform');
+    platforms.create(300, 550, 'platform');
+    
     platforms.setAll('body.immovable', true);
 }
 
