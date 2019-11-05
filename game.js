@@ -41,12 +41,12 @@ function createPoisons() {
 function createPlatforms() {
     platforms = game.add.physicsGroup();
 
-    platforms.create(300, 150, 'platform');
-    platforms.create(400, 250, 'platform');
-    platforms.create(100, 250, 'platform');
-    platforms.create(500, 350, 'platform');
-    platforms.create(400, 450, 'platform');
-    platforms.create(300, 550, 'platform');
+    platforms.create(300, 150, 'platform1');
+    platforms.create(400, 250, 'platform2');
+    platforms.create(100, 250, 'platform1');
+    platforms.create(500, 350, 'platform2');
+    platforms.create(400, 450, 'platform1');
+    platforms.create(300, 550, 'platform2');
     
     platforms.setAll('body.immovable', true);
 }
