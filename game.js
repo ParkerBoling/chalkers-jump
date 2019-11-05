@@ -34,7 +34,9 @@ function createPoisons() {
     poisonCreate(675, 275, 'poison');
     poisonCreate(450, 375, 'poison');
     poisonCreate(375, 475, 'poison');
-    
+    poisonCreate(586, 290, 'poison');
+    poisonCreate(347, 450, 'poison');
+
 }
 
 
